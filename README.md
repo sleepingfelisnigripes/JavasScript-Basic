@@ -1,7 +1,7 @@
-# Java
-This part is a review to Javascript basic knowledge. This note is following the video [here &rarr;](https://www.youtube.com/watch?v=SBmSRK3feww&list=PLEPye7A7EcQZrT3VSBb7jtxnxIfY3yyG6&index=3)
+# JavaScript
+This is a review to Javascript basic knowledge. This note is following the video [here &rarr;](https://www.youtube.com/watch?v=SBmSRK3feww&list=PLEPye7A7EcQZrT3VSBb7jtxnxIfY3yyG6&index=3)
 
-## JavasScript-Basic
+## JavasScript Basic
 
 ### What is JavaScript?
 1. A technology that we use to create websites. (A website is like youtube.com or amazon.com, is how we access website on our computer). 
@@ -27,6 +27,3 @@ This part is a review to Javascript basic knowledge. This note is following the 
 1. rules that we hace to follow when using a programming language like JS
 2. similar to English grammar (don't need follow the grammar perfectly, people still can understand)
 3. in programming, we have to follow the rules of syntax exactly, otherwise computer can't understand
-
-
-# Number and Math
