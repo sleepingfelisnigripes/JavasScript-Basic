@@ -1,5 +1,5 @@
 # JavaScript
-This is a review to Javascript basic knowledge. This note is following the video [here &rarr;](https://www.youtube.com/watch?v=SBmSRK3feww&list=PLEPye7A7EcQZrT3VSBb7jtxnxIfY3yyG6&index=3)
+This is a review to Javascript basic knowledge. This note follows the video [here &rarr;](https://www.youtube.com/watch?v=SBmSRK3feww&list=PLEPye7A7EcQZrT3VSBb7jtxnxIfY3yyG6&index=3)
 
 ## 1. JavasScript Basic
 
