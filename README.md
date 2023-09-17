@@ -29,7 +29,7 @@ This is a review to Javascript basic knowledge. This note is following the video
 3. in programming, we have to follow the rules of syntax exactly, otherwise computer can't understand
 
 ## 2. Numbers and Math
-An example to use [here &rarr;](https://supersimple.dev/projects/amazon/) 
+An example to use [here &rarr;](https://supersimple.dev/projects/amazon/), jump tp the cart page to see the price calculation.
 
 In a console:   
 1. ```2 + 2``` - press enter and show the **adding** result is 4
@@ -55,5 +55,46 @@ In a console:
 When working with money, **Do the calcualtion in cents, then convert back to dollars**. $20.95 + $7.99, we use ```(2095 + 799) / 100``` 
 
 ### 4. How to round a number
-1. Rounding just means taking a number and moving it to the nearest **integer**.
-2. Use ```Math.round()```, put a number in the bracket. (we can use this to the cents frist, and then /100 to change to dollars, and it will have two decimal places).
+1. ```Math.round()``` - Rounding just means taking a number and moving it to the nearest **integer**. Put a number in the bracket. (we can use this to the cents frist, and then /100 to change to dollars, and it will have two decimal places).
+2. ```Math.floor()``` - Rounding a number **Down** to the nearest integer.
+3. ```Math.ceil()``` - Rounding a number **Up** to the nearest integer.
+
+## 3. Strings
+An example to use [here &rarr;](https://supersimple.dev/projects/amazon/checkout)   
+string  = text
+1. a text surronding with single quotes
+2. if we add strings, they will combine together. 
+
+### 1. Concatenation
+means combine strings together.  
+1. ```'some' + 'text'```, result is```'sometext'```
+2. ```'some' + 'more' + 'text```, result is ```'somemoretext```
+
+### 2. types of values
+Numbers ans Strings are two different **types of values** in JavaScript. They represent different things.
+1. ```typeof 2``` - check types of value, this result is ```'number'```, ```typeof 'hello'``` result is ```'string'```
+
+### 3. Type coercion (automatic  type conversion)
+```'hello' + 3``` - the result is ```'hello3'```  
+If add a string and a number, JavaScript will automatically convert this number into a string  
+1. ```$28.94``` is a text - ```'$' + ((2095+799)/100)``` - calculate money in cents
+2. attention: ```$+20.95+7.99```, the result is ```'$20.957.99'```, it will treat as string combination.
+3. *string also follow order of operations*
+
+### 4. 3 ways to create a string
+1. ```'...'``` - for example: ```'hello'```, recommond use this way by default
+2. ```"..."``` - for example: ```"hello"```.  If a single quote inside the string, use double  quotes - ```"I'm learning JavaScript"``` (also can use *escape character* to solve this problem)
+3. ``` `...` ``` - for example: ``` `hello` ```, we call this *template strings*, it have some features
+    1. interpolation - insert value directly into a string - ``` `Items(${1+1}): $${(2095+799)/100}` ```, the result is ```'Items(2):$28.94'```, use ```${...}``` insert value directly into string  
+    *This is a must easier way to insert value into a string.*
+    2. multi-line string - a string have multiple lines, this feature is only available for template strings, same like have a string with ```\n```
+
+### 5. character and escape character
+character = 1 letter/number/symbol (for example, ```'hello'``` have 5 characters)
+1. letter (a, b, c)
+2. number (1, 2, 3)
+3. symbol (!, @, #)
+4. escape character (```\'```), a escape character looks like a backslash and then another character, like single quote, this combination actually counts as one character in a string. backslash do not have any meaning.For example ```'I\'m learning JavaScript'```  
+    1. ```\'``` - create a single quote that is just text, it doesn't start or end the string
+    2. ```\"``` - create a double quote that is just text. it doesn't start or end the string
+    3. ```\n``` - new line character. it create a new line of text.
